@@ -1,7 +1,6 @@
-
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Code, PenTool, Layout } from "lucide-react";
 
 const Index = () => {
   return (
@@ -45,33 +44,89 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Skills Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#2A4365] mb-12">My Skills</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-bold text-[#2A4365] mb-4">Web Development</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript/TypeScript</li>
+                <li>React.js</li>
+                <li>Responsive Design</li>
+                <li>TailwindCSS</li>
+              </ul>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-bold text-[#2A4365] mb-4">UI/UX Design</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>User Research</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>User Testing</li>
+                <li>Design Systems</li>
+              </ul>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-bold text-[#2A4365] mb-4">Graphics Design</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>Logo Design</li>
+                <li>Brand Identity</li>
+                <li>Print Design</li>
+                <li>Social Media Graphics</li>
+                <li>Marketing Materials</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#2A4365] mb-12">My Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Web Design",
-                description: "Creating responsive and modern websites that leave a lasting impression."
-              },
-              {
-                title: "UI/UX Design",
-                description: "Designing intuitive and user-friendly interfaces for exceptional user experiences."
-              },
-              {
-                title: "Graphics Design",
-                description: "Crafting visually stunning designs that communicate your brand's message."
-              }
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
-              >
-                <h3 className="text-xl font-bold text-[#2A4365] mb-4">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+              <div className="mb-6 text-[#ED3833]">
+                <Code size={40} />
               </div>
-            ))}
+              <h3 className="text-xl font-bold text-[#2A4365] mb-4">Web Design</h3>
+              <p className="text-gray-600 mb-4">Creating responsive and modern websites that leave a lasting impression.</p>
+              <ul className="text-gray-600 space-y-2">
+                <li>• Custom Website Development</li>
+                <li>• Mobile-First Design</li>
+                <li>• Performance Optimization</li>
+                <li>• SEO-Friendly Structure</li>
+              </ul>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+              <div className="mb-6 text-[#ED3833]">
+                <Layout size={40} />
+              </div>
+              <h3 className="text-xl font-bold text-[#2A4365] mb-4">UI/UX Design</h3>
+              <p className="text-gray-600 mb-4">Designing intuitive and user-friendly interfaces for exceptional user experiences.</p>
+              <ul className="text-gray-600 space-y-2">
+                <li>• User Interface Design</li>
+                <li>• User Experience Design</li>
+                <li>• Interactive Prototypes</li>
+                <li>• Usability Testing</li>
+              </ul>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+              <div className="mb-6 text-[#ED3833]">
+                <PenTool size={40} />
+              </div>
+              <h3 className="text-xl font-bold text-[#2A4365] mb-4">Graphics Design</h3>
+              <p className="text-gray-600 mb-4">Crafting visually stunning designs that communicate your brand's message.</p>
+              <ul className="text-gray-600 space-y-2">
+                <li>• Brand Identity Design</li>
+                <li>• Marketing Materials</li>
+                <li>• Social Media Graphics</li>
+                <li>• Print Design Solutions</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -80,18 +135,21 @@ const Index = () => {
       <section id="about" className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#2A4365] mb-12">About Me</h2>
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-gray-600 mb-8">
-              I'm a dedicated designer based in Mbarara, Western Uganda, specializing in creating exceptional digital experiences. With expertise in web design, UI/UX design, and graphics design, I help businesses and individuals bring their visions to life.
+          <div className="max-w-3xl mx-auto">
+            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+              I'm a dedicated designer based in Mbarara, Western Uganda, with a passion for creating exceptional digital experiences. With expertise in web design, UI/UX design, and graphics design, I help businesses and individuals bring their visions to life through creative and innovative solutions.
+            </p>
+            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+              My approach combines creativity with functionality, ensuring that every project not only looks beautiful but also delivers results. Whether you need a stunning website, an intuitive user interface, or eye-catching graphics, I'm here to help you achieve your goals.
             </p>
             <div className="flex justify-center space-x-6">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#ED3833]">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#ED3833] transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#ED3833]">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#ED3833] transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:isaacmusinguzi152@gmail.com" className="text-gray-600 hover:text-[#ED3833]">
+              <a href="mailto:isaacmusinguzi152@gmail.com" className="text-gray-600 hover:text-[#ED3833] transition-colors">
                 <Mail size={24} />
               </a>
             </div>
