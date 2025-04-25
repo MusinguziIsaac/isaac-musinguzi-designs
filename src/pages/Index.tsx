@@ -1,6 +1,7 @@
+
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Code, Layout, PenTool } from "lucide-react";
 
 const Index = () => {
   return (
