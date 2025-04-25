@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
-import { Github, Linkedin, Mail, Code, PenTool, Layout } from "lucide-react";
+import { Github, Linkedin, Mail, Code, PenTool, Layout, WhatsApp, Facebook, Instagram, Tiktok } from "lucide-react";
 
 const Index = () => {
   return (
@@ -143,14 +143,45 @@ const Index = () => {
               My approach combines creativity with functionality, ensuring that every project not only looks beautiful but also delivers results. Whether you need a stunning website, an intuitive user interface, or eye-catching graphics, I'm here to help you achieve your goals.
             </p>
             <div className="flex justify-center space-x-6">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#ED3833] transition-colors">
-                <Github size={24} />
+              <a 
+                href="https://wa.me/256764194627" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-green-600 hover:text-green-700 transition-colors"
+              >
+                <WhatsApp size={24} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#ED3833] transition-colors">
+              <a 
+                href="https://www.facebook.com/isaac.musinguzi.777" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-600 hover:text-blue-700 transition-colors"
+              >
+                <Facebook size={24} />
+              </a>
+              <a 
+                href="https://www.tiktok.com/@yourusername" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-black hover:text-gray-700 transition-colors"
+              >
+                <Tiktok size={24} />
+              </a>
+              <a 
+                href="https://www.instagram.com/yourusername" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-pink-600 hover:text-pink-700 transition-colors"
+              >
+                <Instagram size={24} />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/isaac-musinguzi" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-800 hover:text-blue-900 transition-colors"
+              >
                 <Linkedin size={24} />
-              </a>
-              <a href="mailto:isaacmusinguzi152@gmail.com" className="text-gray-600 hover:text-[#ED3833] transition-colors">
-                <Mail size={24} />
               </a>
             </div>
           </div>
